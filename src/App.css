@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f7f4;
+  font-family: "Georgia", serif;
+}
+
+/* ── Page Layout ── */
+.page {
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #888;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Card ── */
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 28px 24px 22px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-left: 5px solid #c084fc;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.11);
+}
+
+/* ── Quote mark ── */
+.quote-mark {
+  font-size: 52px;
+  line-height: 1;
+  color: #c084fc;
+  font-family: "Georgia", serif;
+  opacity: 0.5;
+  user-select: none;
+}
+
+/* ── Quote text ── */
+.quote-text {
+  font-size: 15.5px;
+  color: #3a3a3a;
+  line-height: 1.75;
+  flex: 1;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid #f0eaea;
+}
+
+/* ── Footer row inside card ── */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.author {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #5b21b6;
+}
+
+.category {
+  font-size: 11.5px;
+  font-weight: 600;
+  background-color: #ede9fe;
+  color: #6d28d9;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+/* ── Loading / Error ── */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #888;
+  font-family: "Georgia", serif;
+}
